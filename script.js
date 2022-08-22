@@ -16,6 +16,8 @@ function create_item(){
     li.setAttribute("id", "item" + i + "");
     li.setAttribute("onclick", "remove(this)");
     input.value = "";
+    var key = localStorage.key(i);
+    var value = localStorage[key];
 }
 
 button.addEventListener("click", function() {
@@ -35,3 +37,21 @@ function remove(el) {
     element.remove();
 }
 
+// Color Selector
+
+var css = document.querySelector("h3");
+var col1 = document.querySelector(".color1");
+var col2 = document.querySelector(".color2");
+var body = document.getElementById("gradient");
+
+function set_background(){
+    body.style.background = 
+    "linear-gradient(to right, " 
+    + col1.value 
+    + ", "
+    + col2.value 
+    + ")";
+}
+
+col1.addEventListener("input", set_background);
+col2.addEventListener("input", set_background);

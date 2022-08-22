@@ -1,16 +1,19 @@
+body{
+    background: linear-gradient(to right, #eeaeca, #94bbe9); 
+}
+
 h1{
     font-family: 'Rubik Dirt', cursive;
     text-align: center;
     border-radius: 20px;
     border-style: solid; 
-    border-color: rgb(129, 212, 247);
+    border-color:white; 
     padding: 30px;
     border-width: 8px;
     margin-right: 20%;
     margin-left: 20%;
-    background-color: rgba(250, 175, 220, 0.4);
+    background-color: rgb(129, 212, 247);
 }
-
 
 h4, h5{
     text-align: center;
@@ -20,6 +23,18 @@ h4, h5{
 h5{
     color: green;
 }
+
+h3{
+    font-family: monospace, Geneva;
+}
+
+.color_picker{
+    position: fixed;
+    bottom: 8%;
+    width: 100%;
+    text-align: center;
+}
+
 .container {
     display: grid;
     margin-left: 35%;
@@ -30,7 +45,7 @@ h5{
 }
 
 .tlist {
-    font-family: fantasy;
+    font-family: fantasy, monospace;
     margin-left: 35%;
     margin-right: 35%;
     padding: 0;
@@ -104,3 +119,4 @@ h5{
         line-height: 50px;
     }
 }
+
